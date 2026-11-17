@@ -109,7 +109,7 @@ export async function fetchAirQuality(
   lng: number,
   locationName: string
 ): Promise<AirQualityData> {
-  const apiKey = process.env.OPENWEATHER_API_KEY;
+  const apiKey = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY;
   const endpoint = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lng}&appid=${apiKey}`;
 
   let pm25 = 25;
